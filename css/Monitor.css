@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 12px;
+}
+ul,
+li {
+  list-style: none;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  height: 0;
+  content: '';
+  clear: both;
+}
+.container {
+  background: #eef1f5;
+}
+.container .left {
+  float: left;
+  width: 175px;
+  padding-bottom: 180px;
+  background: #2a3542;
+  line-height: 60px;
+  text-align: center;
+}
+.container .left .logo {
+  height: 60px;
+  background: #000;
+}
+.container .left .search_list {
+  color: #aeb2b7;
+}
+.container .left .search_list ul li h3 {
+  height: 55px;
+  line-height: 55px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.container .left .search_list ul li dl {
+  background: #35404d;
+  margin: 0 10px;
+  margin-top: 4px;
+}
+.container .left .search_list ul li dl dt {
+  line-height: 45px;
+}
+.container .left .search_list ul li dl dd {
+  line-height: 40px;
+}
+.container .left .search_list .version {
+  background: #242d38;
+  margin-top: 150px;
+  padding: 10px 20px;
+  border-top: 1px solid #38424f;
+  border-bottom: 1px solid #38424f;
+}
+.container .left .search_list .version p {
+  line-height: 20px;
+}
+.container .right {
+  float: left;
+  min-width: 1270px;
+  background: #eef1f5;
+}
+.container .right .top {
+  background: #ffffff;
+}
+.container .right .top .img_left {
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: #aeb2b7;
+}
+.container .right .top .img_right {
+  float: right;
+  margin-right: 20px;
+}
+.container .right .top .img_right span {
+  display: inline-block;
+  line-height: 60px;
+  width: 60px;
+}
+.container .right .title {
+  position: relative;
+}
+.container .right .title h2 {
+  line-height: 95px;
+  padding: 0 20px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.container .right .title .monitor_com {
+  position: absolute;
+  top: 22px;
+  right: 190px;
+  background: #ffffff;
+  width: 155px;
+  height: 50px;
+  border-radius: 3px;
+}
+.container .right .title .monitor_com .img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #aeb2b7;
+}
+.container .right .title .monitor_com .desc {
+  display: inline-block;
+  vertical-align: top;
+}
+.container .right .title .monitor_com .desc p {
+  font-size: 14px;
+}
+.container .right .title .monitor_com .desc p.one {
+  font-size: 24px;
+}
+.container .right .title .collect_com {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  background: #ffffff;
+  width: 155px;
+  height: 50px;
+  border-radius: 3px;
+}
+.container .right .title .collect_com .img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #aeb2b7;
+}
+.container .right .title .collect_com .desc {
+  display: inline-block;
+  vertical-align: top;
+}
+.container .right .title .collect_com .desc p {
+  font-size: 14px;
+}
+.container .right .title .collect_com .desc p.one {
+  font-size: 24px;
+}
+.container .right .show_list {
+  background: #ffffff;
+  border-radius: 3px;
+  margin: 0 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.container .right .show_list .search_icon {
+  line-height: 70px;
+  border-bottom: 1px solid #e2e2e2;
+}
+.container .right .show_list .search_icon select {
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #b3b3b3;
+  border-radius: 3px;
+  padding: 0 10px;
+  color: #555555;
+  margin-right: 10px;
+}
+.container .right .show_list .search_icon input {
+  width: 210px;
+  height: 35px;
+  line-height: 37px;
+  border: 1px solid #b3b3b3;
+  border-radius: 3px;
+  padding: 0 10px;
+  color: #555555;
+  box-sizing: border-box;
+}
+.container .right .show_list table {
+  border-collapse: collapse;
+  border: 1px solid #e2e2e2;
+}
+.container .right .show_list table th {
+  background: #eef0f6;
+  line-height: 40px;
+  text-align: left;
+  padding-left: 15px;
+  color: #333333;
+  font-size: 14px;
+}
+.container .right .show_list table td {
+  background: #ffffff;
+  line-height: 50px;
+  text-align: left;
+  padding-left: 15px;
+  font-size: 14px;
+  color: #555555;
+}
+.container .right .show_list table .check {
+  width: 40px;
+  text-align: center;
+  padding-left: 0;
+}
+.container .right .show_list table .name {
+  width: 360px;
+}
+.container .right .show_list table .group {
+  width: 155px;
+}
+.container .right .show_list table .group select {
+  width: 125px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 3px;
+  padding-left: 8px;
+  color: #555555;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+}
+.container .right .show_list table .collect_date {
+  width: 120px;
+}
+.container .right .show_list table .till_to {
+  width: 130px;
+}
+.container .right .show_list table .last {
+  position: relative;
+  width: 145px;
+}
+.container .right .show_list table .last a {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -25px;
+  display: inline-block;
+  text-decoration: none;
+  color: #ff7a42;
+}
+.container .right .show_list table .monitor_status {
+  width: 115px;
+  padding-left: 0;
+}
+.container .right .show_list table .monitor_status span {
+  display: block;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  border: 1px solid #ec6459;
+  text-align: center;
+  border-radius: 3px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.container .right .show_list table .collect_status {
+  width: 115px;
+  padding-left: 0;
+}
+.container .right .show_list table .collect_status span {
+  display: block;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  border: 1px solid #6f86a4;
+  text-align: center;
+  border-radius: 3px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.container .right .select_list {
+  background: #ffffff;
+  line-height: 60px;
+  height: 60px;
+  margin: 0 20px;
+  padding: 0 20px;
+}
+.container .right .select_list .select_left {
+  float: left;
+}
+.container .right .select_list .select_left input {
+  vertical-align: middle;
+  width: 40px;
+  font-size: 14px;
+  color: #555555;
+}
+.container .right .select_list .select_left span {
+  font-size: 14px;
+  color: #555555;
+}
+.container .right .select_list .select_left span.change {
+  margin: 0 30px;
+}
+.container .right .select_list .numbers {
+  float: right;
+  font-size: 14px;
+  margin-right: 20px;
+}
+.container .right .select_list .numbers span {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #e2e2e4;
+}
+.container .right .select_list .numbers span.total {
+  width: 100px;
+  border: none;
+  margin-right: 30px;
+}
+.container .right .select_list .numbers select {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #555555;
+  margin-right: 10px;
+  border: 1px solid #e2e2e4;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
