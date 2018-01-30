@@ -4,6 +4,8 @@
 }
 body {
   font-size: 12px;
+  min-height: 100vh;
+  background: #eef1f5;
 }
 ul,
 li {
@@ -20,9 +22,13 @@ li {
 }
 .container {
   background: #eef1f5;
+  position: relative;
 }
 .container .left {
-  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
   width: 175px;
   padding-bottom: 180px;
   background: #2a3542;
@@ -64,8 +70,9 @@ li {
   line-height: 20px;
 }
 .container .right {
-  float: left;
-  min-width: 1270px;
+  padding-left: 175px;
+  width: 100%;
+  box-sizing: border-box;
   background: #eef1f5;
 }
 .container .right .top {
@@ -179,6 +186,9 @@ li {
   border-collapse: collapse;
   border: 1px solid #e2e2e2;
 }
+.container .right .show_list table tr:hover {
+  background: #fafafa;
+}
 .container .right .show_list table th {
   background: #eef0f6;
   line-height: 40px;
@@ -188,7 +198,6 @@ li {
   font-size: 14px;
 }
 .container .right .show_list table td {
-  background: #ffffff;
   line-height: 50px;
   text-align: left;
   padding-left: 15px;
@@ -239,6 +248,12 @@ li {
   width: 115px;
   padding-left: 0;
 }
+.container .right .show_list table .monitor_status:hover .ismonitored {
+  display: none;
+}
+.container .right .show_list table .monitor_status:hover .cancel_monitor {
+  display: block;
+}
 .container .right .show_list table .monitor_status span {
   display: block;
   width: 90px;
@@ -248,12 +263,25 @@ li {
   border: 1px solid #ec6459;
   text-align: center;
   border-radius: 3px;
-  padding-left: 20px;
   box-sizing: border-box;
+}
+.container .right .show_list table .monitor_status span.ismonitored {
+  padding-left: 20px;
+  background: url('../images/monitor_logo.png') no-repeat 8px center;
+}
+.container .right .show_list table .monitor_status span.cancel_monitor {
+  display: none;
+  background: #fcf1f0;
 }
 .container .right .show_list table .collect_status {
   width: 115px;
   padding-left: 0;
+}
+.container .right .show_list table .collect_status:hover .iscollect {
+  display: none;
+}
+.container .right .show_list table .collect_status:hover .cancel_collect {
+  display: block;
 }
 .container .right .show_list table .collect_status span {
   display: block;
@@ -264,8 +292,15 @@ li {
   border: 1px solid #6f86a4;
   text-align: center;
   border-radius: 3px;
-  padding-left: 20px;
   box-sizing: border-box;
+}
+.container .right .show_list table .collect_status span.iscollect {
+  padding-left: 20px;
+  background: url('../images/collect_logo.png') no-repeat 8px center;
+}
+.container .right .show_list table .collect_status span.cancel_collect {
+  display: none;
+  background: #f0f7fd;
 }
 .container .right .select_list {
   background: #ffffff;

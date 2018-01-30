@@ -4,6 +4,8 @@
 }
 body{
     font-size: 12px;
+    min-height: 100vh;
+    background: #eef1f5;
 }
 ul,li{
     list-style: none;
@@ -19,8 +21,12 @@ ul,li{
 }
 .container{
     background: #eef1f5;
+    position: relative;
     .left{
-        float: left;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
         width: 175px;
         padding-bottom: 180px;
         background: #2a3542;
@@ -67,8 +73,9 @@ ul,li{
         }
     }
     .right{
-        float: left;
-        min-width: 1270px;
+        padding-left: 175px;
+        width: 100%;
+        box-sizing: border-box;
         background: #eef1f5;
         .top{
             background: #ffffff;
@@ -181,6 +188,9 @@ ul,li{
                 border-collapse: collapse;
                 border: 1px solid #e2e2e2;
                 tr{
+                    &:hover{
+                        background: #fafafa;
+                    }
 
                 }
                 th{
@@ -192,7 +202,6 @@ ul,li{
                     font-size: 14px;
                 }
                 td{
-                    background: #ffffff;
                     line-height: 50px;
                     text-align: left;
                     padding-left: 15px;
@@ -242,6 +251,14 @@ ul,li{
                 .monitor_status{
                     width: 115px;
                     padding-left: 0;
+                    &:hover{
+                        .ismonitored{
+                            display: none;
+                        }
+                        .cancel_monitor{
+                            display: block;
+                        }
+                    }
                     span{
                         display: block;
                         width: 90px;
@@ -251,12 +268,27 @@ ul,li{
                         border: 1px solid #ec6459;
                         text-align: center;
                         border-radius: 3px;
-                        padding-left: 20px;
                         box-sizing: border-box;
+                        &.ismonitored{
+                            padding-left: 20px;
+                        background: url('../images/monitor_logo.png') no-repeat  8px center;
+                        }
+                        &.cancel_monitor{
+                            display: none;
+                            background: #fcf1f0;
+                        }
                     }
                 }
                 .collect_status{
                     width: 115px;padding-left: 0;
+                    &:hover{
+                        .iscollect{
+                            display: none;
+                        }
+                        .cancel_collect{
+                            display: block;
+                        }
+                    }
                     span{
                         display: block;
                         width: 90px;
@@ -266,8 +298,15 @@ ul,li{
                         border: 1px solid #6f86a4;
                         text-align: center;
                         border-radius: 3px;
-                        padding-left: 20px;
                         box-sizing: border-box;
+                        &.iscollect{
+                            padding-left: 20px;
+                            background: url('../images/collect_logo.png') no-repeat 8px center;
+                        }
+                        &.cancel_collect{
+                            display: none;
+                            background: #f0f7fd;
+                        }
                     }
                 }
             }
