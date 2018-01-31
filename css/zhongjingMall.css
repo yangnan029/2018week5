@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  height: 0;
+  content: '';
+  clear: both;
+}
+body {
+  font-size: 12px;
+}
+.title_container,
+.about_us_container,
+.special_container,
+.our_products_container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.title_container h3,
+.about_us_container h3,
+.special_container h3,
+.our_products_container h3 {
+  text-align: center;
+  font-size: 28px;
+  color: #333333;
+  font-weight: normal;
+  padding-top: 20px;
+  line-height: 58px;
+}
+.title_container p,
+.about_us_container p,
+.special_container p,
+.our_products_container p {
+  text-align: center;
+  color: #666666;
+  line-height: 2;
+}
+.title {
+  line-height: 100px;
+}
+.title .title_container a {
+  display: block;
+  float: left;
+  color: #43181a;
+  font-size: 34px;
+}
+.title .title_container .title_list {
+  float: right;
+}
+.title .title_container .title_list ul li {
+  float: left;
+  font-size: 18px;
+  color: #411905;
+  margin-right: 100px;
+}
+.title .title_container .title_list ul li:last-child {
+  margin-right: 0;
+}
+.banner {
+  height: 600px;
+  background: url('../images/shangcheng2/banner.png') no-repeat;
+}
+.about_us {
+  margin-bottom: 15px;
+  padding-bottom: 30px;
+}
+.about_us .about_us_container ul {
+  margin-top: 10px;
+}
+.about_us .about_us_container ul li {
+  float: left;
+  width: 285px;
+  height: 225px;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #dedede;
+  margin-right: 20px;
+}
+.about_us .about_us_container ul li:last-child {
+  margin-right: 0;
+}
+.about_us .about_us_container ul li h4 {
+  font-size: 20px;
+  color: #333333;
+  font-weight: normal;
+}
+.about_us .about_us_container ul li h4 span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #999999;
+  color: #ffffff;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 18px;
+}
+.about_us .about_us_container ul li p {
+  text-align: left;
+  font-size: 14px;
+  color: #666666;
+  line-height: 2;
+}
+.special {
+  background: #f3f3f3;
+}
+.special .special_container ul {
+  padding: 20px 0 55px 0;
+}
+.special .special_container ul li {
+  float: left;
+  padding: 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 50%;
+  margin-right: 15px;
+  box-sizing: border-box;
+}
+.special .special_container ul li:last-child {
+  margin-right: 0;
+}
+.our_products .our_products_container ul {
+  padding-top: 30px;
+  padding-bottom: 135px;
+}
+.our_products .our_products_container ul li {
+  float: left;
+  margin-right: 120px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #333333;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+}
+.our_products .our_products_container ul li:last-child {
+  margin-right: 0;
+}
+.our_products .our_products_container ul li:first-child {
+  background: #6e2127;
+  color: #ffffff;
+}
+.our_products .our_products_container .sub_banner {
+  padding-bottom: 170px;
+}
+.our_products .our_products_container .sub_banner .left {
+  float: left;
+  height: 270px;
+}
+.our_products .our_products_container .sub_banner .left img {
+  padding-top: 83px;
+}
+.our_products .our_products_container .sub_banner .middle {
+  float: left;
+}
+.our_products .our_products_container .sub_banner .middle .desc {
+  float: left;
+  width: 353px;
+  margin-left: 185px;
+  margin-right: 10px;
+}
+.our_products .our_products_container .sub_banner .middle .desc h2 {
+  font-size: 50px;
+  color: #333333;
+  font-weight: normal;
+}
+.our_products .our_products_container .sub_banner .middle .desc p {
+  font-size: 18px;
+  color: #999999;
+  text-align: left;
+  line-height: 2;
+}
+.our_products .our_products_container .sub_banner .middle .imgs {
+  float: left;
+}
+.our_products .our_products_container .sub_banner .middle .imgs img {
+  display: block;
+  width: 440px;
+  height: 270px;
+}
+.our_products .our_products_container .sub_banner .right {
+  float: left;
+  height: 270px;
+  margin-left: 110px;
+}
+.our_products .our_products_container .sub_banner .right img {
+  padding-top: 83px;
+}
+.footer {
+  background: #2f1c18;
+  height: 110px;
+  padding-top: 35px;
+  box-sizing: border-box;
+}
+.footer p {
+  line-height: 2;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+}
