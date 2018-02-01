@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix{
+    zoom: 1;
+    &:after{
+        display: block;
+        height: 0;
+        content: '';
+        clear: both;
+    }
+}
+body{
+    width: 100%;
+    font-size: 12px;
+    background: url('../images/newTimes/bg.png') no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 990px;
+    background: #ffffff;
+    margin: 0 auto;
+    margin-top: 15px;
+    .title{
+        .logo{
+            float: left;
+            padding: 18px  0 5px 15px;
+        }
+    
+        .title_list{
+            float: right;
+            margin-right: 20px;
+            margin-top: 40px;
+    
+            ul{
+                li{
+                    float: left;
+                    
+                }
+            }
+        }
+    }
+    .nav{
+        width: 1004px;
+        margin-left: -6px;
+        background:url('../images/newTimes/title_bg.png');
+        ul{
+            li{
+                float: left;
+                a{
+                    font-size: 14px;
+                    color: #ffffff;
+                    font-weight: bold;
+                    display: inline-block;    
+                    margin: 10px 0;
+                    padding: 0 24px;
+                    border-right: 1px solid #ffffff;
+                    &.last{
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+    .sub_nav{
+        padding: 10px 0 10px 40px;
+        ul{
+            
+            li{
+                float: left;
+                padding: 0 15px;
+                color: #656565;
+                border-right: 1px solid #656565;
+                &:last-child{
+                    border-right: none;
+                }
+            }
+        }
+    }
+    .banner{
+        padding: 0 10px;
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .lists{
+        margin-top: 15px;
+        padding: 20px 15px;
+        background: #f6f6f6;
+        ul{
+            li{
+                float: left;
+                margin-right: 50px;
+                &:last-child{
+                    margin-right: 0;
+                    .vedio{
+                        .imgs{
+                            float: left;
+                            img{
+                                width: 165px;
+                                height: 145px;  
+                            }
+                        }
+                        .desc{
+                            float: left;
+                            margin-left: 10px;
+                        p{
+                            color: #8b8b8b;
+                            font-size: 12px;
+                            line-height: 20px;
+                            padding-left: 10px;
+                            background: url('../images/newTimes/youjian.png') no-repeat 0 center;
+                        }
+                        .more{
+                            margin-top: 5px;
+                        }
+                        }
+                    }
+                }
+                h4{
+                    color: #036c37;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                .details{
+                    margin-bottom: 10px;
+                    .imgs{
+                        float: left;
+                        padding: 5px;
+                        background: #ffffff;
+                        img{
+                            width: 135px;
+                            height: 110px;
+                        }
+                    }
+                    .desc{
+                        float: left;
+                        margin-left: 10px;
+                        p{
+                            color: #8b8b8b;
+                            font-size: 12px;
+                            line-height: 20px;
+                            padding-left: 10px;
+                            background: url('../images/newTimes/youjian.png') no-repeat 0 center;
+                        }
+                    }
+                }
+                .more{
+
+                    a{
+                        font-size: 12px;
+                        color: #008d37;
+                    }
+                }
+            }
+        }
+    }
+    .list2{
+        ul{
+            li{
+                float: left;
+                width: 295px;
+                padding: 0 5px;
+                &:nth-child(2){
+                    width: 340px;
+                }
+                .title{
+                    margin: 18px 0;
+                    span{
+                        display: block;
+                        width: 120px;
+                        line-height: 30px;
+                        font-size: 14px;
+                        color: #ffffff;
+                        font-weight: bold;
+                        background: #045e35;
+                        text-align: center;
+                    }
+                }
+                &:first-child{
+                    
+                    img{
+                        display: inline-block;
+                        width: 110px;
+                        height: 80px;
+                        margin-right: 10px;
+                    }
+                }
+                p{
+                    color: #8b8b8b;
+                    line-height: 1.5;
+                    &.one{
+                        text-indent: 2em;
+                        width: 170px;
+                        display: inline-block;
+                    }
+                }
+                .fours{
+                    .items{
+                        position: relative;
+                        display: inline-block;
+                        padding: 5px;
+                        border: 1px solid #8b8b8b;
+                        margin-right: 30px;
+                        margin-bottom: 15px;
+                        img{
+                            width: 140px;
+                            height: 85px;
+                            display: inline-block;
+                        }
+                        p{
+                            position: absolute;
+                            bottom: 5px;
+                            width: 140px;
+                            left: 5px;
+                            background: rgba(4, 91, 36, 0.5);
+                            color: #ffffff;
+                            text-align: center;
+                            line-height: 25px;
+                        }
+                    }
+                    .nomr{
+                        margin-right: 0;
+                        margin-bottom: 0;
+                    }
+                    .nobo{
+                        margin-bottom: 0;
+                    }
+                }
+                .infos{
+                    .info1{
+                        line-height: 30px;
+                        border-bottom: 1px dotted #8b8b8b;
+                        padding-left: 10px;
+                    }
+                }
+                
+                .more{
+
+                    a{
+                        font-size: 12px;
+                        color: #008d37;
+                    }
+                }
+            }
+        }
+    }
+    .cooperation{
+        width: 970px;
+        margin: 20px auto;
+        border: 1px solid #e7e7e7;
+        line-height: 60px;
+        span{
+            display: block;
+            float: left;
+            padding-left: 15px;
+            color: #045e35;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        ul{
+            li{
+                float: left;
+                line-height: 60px;
+                padding-left: 20px;
+                img{
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .footer{
+        width: 970px;
+        margin: 0 auto;
+        background: #036c37;
+        color: #ffffff;
+        text-align: center;
+        padding: 8px 0;
+        span{
+            padding: 0 15px;     
+            border-right: 1px solid #ffffff;    
+            &.last{
+                border-right: none;
+            }   
+        }
+    }
+    .copyright{
+        line-height: 60px;
+        text-align: center;
+    }
+}
