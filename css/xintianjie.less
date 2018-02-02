@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix{
+    zoom: 1;
+    &:after{
+        display: block;
+        height: 0;
+        content: '';
+        clear: both;
+    }
+}
+.head_container,.course_container,.profile_container,.project_container,.information_container,.presentation_container,.footer_container{
+    width: 1140px;
+    margin: 0 auto;
+    .title{
+        margin-top: 40px;
+        text-align: center;
+    }
+    p{
+        font-size: 15px;
+        color: #999999;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
+.head{
+    height: 100px;
+    border-bottom: 2px solid red;
+    box-sizing: border-box;
+    .head_container{
+        line-height: 100px;
+        .logo{
+            float: left;
+            img{
+                vertical-align: middle;
+            }
+        }
+        .head_list{
+            float: right;
+            a{
+                color: #333333;
+                font-size: 18px;
+                padding-left: 40px;
+            }
+        }
+    }
+}
+.course{
+    .course_container{
+        .details{
+            height: 500px;
+            padding: 50px 0;
+            background: url('../images/xintianjie/list1.png') no-repeat center;
+        }
+    }
+}

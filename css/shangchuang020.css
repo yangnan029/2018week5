@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  height: 0;
+  content: ' ';
+  clear: both;
+}
+.title {
+  line-height: 60px;
+  background: #000;
+  width: 100%;
+}
+.title .logo {
+  display: inline-block;
+  padding: 0 70px;
+}
+.title .logo img {
+  vertical-align: middle;
+}
+.title .title_lists {
+  vertical-align: middle;
+  display: inline-block;
+}
+.title .title_lists a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 0 20px;
+}
+.title .title_lists a.more {
+  background: url('../images/shangchuang020/xiajian.png') no-repeat 90px center;
+}
+.title .title_lists a.active {
+  background: #303030;
+}
+.banner img {
+  display: block;
+  width: 100%;
+}
+.container ul li {
+  width: 100%;
+}
+.container ul li .desc {
+  height: 550px;
+  width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.container ul li .desc h3 {
+  font-size: 36px;
+  color: #23a6d1;
+  font-weight: normal;
+}
+.container ul li .desc p {
+  font-size: 18px;
+  color: #3a3a3a;
+  line-height: 2;
+  margin-top: 25px;
+}
+.container ul li .desc p span {
+  color: #23a6d1;
+}
+.container ul li .descs {
+  height: 550px;
+  width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.container ul li .descs .details {
+  float: left;
+  width: 670px;
+  padding-top: 100px;
+}
+.container ul li .descs .details h3 {
+  padding-top: 70px;
+  font-size: 36px;
+  color: #23a6d1;
+  font-weight: normal;
+}
+.container ul li .descs .details p {
+  font-size: 18px;
+  color: #3a3a3a;
+  line-height: 2;
+  margin-top: 25px;
+}
+.container ul li .descs .details p span {
+  color: #23a6d1;
+}
+.container ul li .descs .imgs {
+  float: right;
+  padding-top: 100px;
+}
+.container ul li .descs .imgs img {
+  width: 358px;
+}
+.container ul li:nth-child(odd) {
+  background: #ffffff;
+}
+.container ul li:nth-child(odd) .desc {
+  padding-left: 530px;
+  background: url('../images/shangchuang020/img1.png') no-repeat 0 center;
+  padding-top: 170px;
+  background-size: 358px;
+}
+.container ul li:nth-child(even) {
+  background: #fff9ed;
+}
+.footer .footer_list {
+  padding: 40px  0 20px 0;
+  text-align: center;
+}
+.footer .footer_list span {
+  padding-right: 15px;
+}
+.footer p {
+  text-align: center;
+}

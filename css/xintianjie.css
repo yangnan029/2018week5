@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  height: 0;
+  content: '';
+  clear: both;
+}
+.head_container,
+.course_container,
+.profile_container,
+.project_container,
+.information_container,
+.presentation_container,
+.footer_container {
+  width: 1140px;
+  margin: 0 auto;
+}
+.head_container .title,
+.course_container .title,
+.profile_container .title,
+.project_container .title,
+.information_container .title,
+.presentation_container .title,
+.footer_container .title {
+  margin-top: 40px;
+  text-align: center;
+}
+.head_container p,
+.course_container p,
+.profile_container p,
+.project_container p,
+.information_container p,
+.presentation_container p,
+.footer_container p {
+  font-size: 15px;
+  color: #999999;
+  text-align: center;
+  padding-top: 20px;
+}
+.head {
+  height: 100px;
+  border-bottom: 2px solid red;
+  box-sizing: border-box;
+}
+.head .head_container {
+  line-height: 100px;
+}
+.head .head_container .logo {
+  float: left;
+}
+.head .head_container .logo img {
+  vertical-align: middle;
+}
+.head .head_container .head_list {
+  float: right;
+}
+.head .head_container .head_list a {
+  color: #333333;
+  font-size: 18px;
+  padding-left: 40px;
+}
+.course .course_container .details {
+  height: 500px;
+  padding: 50px 0;
+  background: url('../images/xintianjie/list1.png') no-repeat center;
+}

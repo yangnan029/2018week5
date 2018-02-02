@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix{
+    zoom: 1;
+    &:after{
+        display: block;
+        height: 0;
+        content: ' ';
+        clear: both;
+    }
+}
+.title{
+    line-height: 60px;
+    background: #000;
+    width: 100%;
+    .logo{
+        display: inline-block;
+        padding: 0 70px;
+        img{
+            vertical-align: middle;
+        }
+    }
+    .title_lists{
+        vertical-align: middle;
+        display: inline-block;
+        a{
+            display: inline-block;
+            color: #ffffff;
+            padding: 0 20px;
+            &.more{
+                background:url('../images/shangchuang020/xiajian.png') no-repeat 90px center;
+            }
+            &.active{
+                background: #303030;
+            }
+        }
+    }
+}
+
+.banner{
+    img{
+        display: block;
+        width: 100%;
+    }
+}
+.container{
+    ul{
+        li{
+            width: 100%;
+            .desc{
+                height: 550px;
+                width: 1200px;
+                margin: 0 auto;
+                box-sizing: border-box;
+                h3{
+                    font-size: 36px;
+                    color: #23a6d1;
+                    font-weight: normal;
+                }
+                p{
+                    font-size: 18px;
+                    color: #3a3a3a;
+                    line-height: 2;
+                    margin-top: 25px;
+                    span{
+                        color: #23a6d1;
+                    }
+                }
+            }
+            .descs{
+                height: 550px;
+                width: 1200px;
+                margin: 0 auto;
+                box-sizing: border-box;
+                .details{
+                    float: left;
+                    width: 670px;
+                    padding-top: 100px;
+                    h3{
+                        padding-top: 70px;
+                        font-size: 36px;
+                        color: #23a6d1;
+                        font-weight: normal;
+                    }
+                    p{
+                        font-size: 18px;
+                        color: #3a3a3a;
+                        line-height: 2;
+                        margin-top: 25px;
+                        span{
+                            color: #23a6d1;
+                        }
+                    }
+                }
+                .imgs{
+                    float: right;
+                    padding-top: 100px;
+                    img{
+                        width: 358px;
+                    }
+                }
+            }
+            &:nth-child(odd){
+                background: #ffffff;
+                .desc{
+                    padding-left: 530px;
+                    background: url('../images/shangchuang020/img1.png') no-repeat 0 center;
+                    padding-top: 170px;
+                    background-size: 358px;
+                }
+
+            }
+            &:nth-child(even){
+                background: #fff9ed;
+            }
+            
+        }
+    }
+}
+.footer{
+    .footer_list{
+        padding: 40px  0 20px 0;
+        text-align: center;
+        span{
+            padding-right: 15px;
+        }
+    }
+    p{
+        text-align: center;
+    }
+}
