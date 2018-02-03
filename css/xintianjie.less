@@ -18,10 +18,10 @@ a{
     }
 }
 .head_container,.course_container,.profile_container,.project_container,.information_container,.presentation_container,.footer_container{
-    width: 1140px;
+    width: 1200px;
     margin: 0 auto;
     .title{
-        margin-top: 40px;
+        padding-top: 40px;
         text-align: center;
     }
     p{
@@ -54,12 +54,284 @@ a{
         }
     }
 }
+.banner{
+    width: 100%;
+    overflow: hidden;
+}
 .course{
     .course_container{
         .details{
+            position: relative;
             height: 500px;
             padding: 50px 0;
             background: url('../images/xintianjie/list1.png') no-repeat center;
+        ul{
+            li{
+                position: absolute;
+                float: left;
+                &:first-child{
+                    top: 120px;
+                    left: 245px;
+                }
+                &:nth-child(2){
+                    top: 120px;
+                    left:50%;
+                    margin-left: -70px;
+                }
+                &:nth-child(3){
+                    top: 120px;
+                    right:245px;
+                }
+                &:nth-child(4){
+                    top: 270px;
+                    left: 190px;
+                }
+                &:nth-child(5){
+                    top: 270px;
+                    right: 190px;
+                }
+                &:nth-child(6){
+                    top: 430px;
+                    left: 245px;
+                }
+                &:nth-child(7){
+                    top: 430px;
+                    right: 245px;
+                }
+                h4{
+                    font-size: 18px;
+                    color: #333333;
+                    font-weight: normal;
+                }
+                .test{
+                    text-align: center;
+                    .left{
+                        float: left;
+                        height: 30px;
+                        padding-right: 10px;
+                         border-right: 1px solid #333333;
+                        p{
+                            padding: 0;
+                            font-size: 12px;
+                        }
+                    }
+                    .right{
+                        padding-left: 10px;
+                        float: left;
+                        p{
+                            padding: 0;
+                            height: 30px;
+                            font-size: 18px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
         }
+        }
+    }
+}
+.profile{
+    background: #f3f3f3;
+    padding-bottom: 65px;
+    .profile_container{
+        .details{
+            padding-top: 65px;
+            .imgs{
+                float: left;
+            }
+            p{
+                padding-top: 25px;
+                width: 620px;
+                float: right;
+                line-height: 50px;
+                text-align: left;
+                font-size: 14px;
+                color: #333333;
+                text-indent: 2em;
+            }
+        }
+    }
+}
+.project{
+    .project_container{
+        .details{
+            padding-top: 65px;
+        }
+    }
+}
+.information{
+    background: #f3f3f3;
+    padding-bottom: 40px;
+    .information_container{        
+        width: 1200px;
+        margin: 0 auto;
+        .details{
+            padding-top: 65px;
+            .imgs{
+                float: left;
+                margin-right: 15px;
+                img{
+                    width: 480px;
+                    height: 475px;
+                }
+            }
+            .list{
+                float: right;
+                width: 700px;
+                ul{
+                    li{
+                        height: 148px;
+                        background: #e9e9e9;
+                        padding: 20px;
+                        box-sizing: border-box;
+                        margin-bottom: 15px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                        .p1{
+                            padding-bottom: 15px;
+                            padding-left: 105px;
+                            background: url('../images/xintianjie/newhead.png') no-repeat;
+                            font-size: 18px;
+                            color: #333333;
+                        }
+                        .liner{
+                            height: 1px;
+                            background: #cf1b25;
+                        }
+                        .p2{
+                            color: #999999;
+                            font-size: 14px;
+                            text-align: left;
+                            padding-top: 12px;
+                        }
+                        span{
+                            display: block;
+                            float: right;
+                            font-size: 12px;
+                            color: #999999;
+                            line-height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+.presentation{
+    padding-bottom: 40px;
+    .presentation_container{
+        .lists{
+            margin-top: 25px;
+            ul{
+                li{
+                    float: left;
+                    width: 185px;
+                    height: 120px;
+                    line-height: 120px;
+                    border: 1px solid #e3e3e3;
+                    box-sizing: border-box;
+                    margin-right: 15px;
+                    margin-top: 15px;
+                    text-align: center;                    
+                    img{
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer{
+    .footer_container{
+        text-align: center;
+        .tabs{
+            display: inline-block;
+            height: 40px;
+            line-height: 40px;
+            color: #333333;
+            box-sizing: border-box;
+            background: #ffffff;
+            border: 1px solid #999999;
+            padding: 0 25px;
+        }
+        .contacts{
+                margin: 20px 0;
+            p{
+                padding:3px;
+                
+            span{
+                border: none;
+                color: #999999;
+            }  
+            }
+        }   
+    }
+}
+.footer2{
+    height: 250px;
+    background: #525252;
+    .contactsUs{
+        text-align: center;
+        ul{
+            display: inline-block;
+            margin-top: 30px;
+            li{
+                float: left;
+                border-right: 1px dotted #ffffff;
+                padding:0 80px;
+                &:last-child{
+                    border-right: 0;
+                }
+                h4{
+                    color: #dadada;
+                    font-size: 18px;
+                    font-weight: normal;
+                }
+                .mobile{
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                }
+                span{
+                    color: #ffffff;
+                    font-size: 14px;
+
+                }
+                .guanzhu{
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    .wechat{
+                        float: left;
+                        margin-right: 30px;
+                        img{
+                            display: block;
+                            margin-left: 10px;
+                        }
+                        span{
+                            text-align: left;
+                        }
+                    }
+                    .code{
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+    .foot2_lists{
+        text-align: center;
+        a{
+            color: #dadada;
+            padding: 0 20px;
+            font-size: 12px;
+        }
+    }
+    p{
+        text-align: center;
+        font-size: 12px;
+        color: #9c9c9c;
     }
 }

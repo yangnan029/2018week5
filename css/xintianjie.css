@@ -25,7 +25,7 @@ a {
 .information_container,
 .presentation_container,
 .footer_container {
-  width: 1140px;
+  width: 1200px;
   margin: 0 auto;
 }
 .head_container .title,
@@ -35,7 +35,7 @@ a {
 .information_container .title,
 .presentation_container .title,
 .footer_container .title {
-  margin-top: 40px;
+  padding-top: 40px;
   text-align: center;
 }
 .head_container p,
@@ -72,8 +72,261 @@ a {
   font-size: 18px;
   padding-left: 40px;
 }
+.banner {
+  width: 100%;
+  overflow: hidden;
+}
 .course .course_container .details {
+  position: relative;
   height: 500px;
   padding: 50px 0;
   background: url('../images/xintianjie/list1.png') no-repeat center;
+}
+.course .course_container .details ul li {
+  position: absolute;
+  float: left;
+}
+.course .course_container .details ul li:first-child {
+  top: 120px;
+  left: 245px;
+}
+.course .course_container .details ul li:nth-child(2) {
+  top: 120px;
+  left: 50%;
+  margin-left: -70px;
+}
+.course .course_container .details ul li:nth-child(3) {
+  top: 120px;
+  right: 245px;
+}
+.course .course_container .details ul li:nth-child(4) {
+  top: 270px;
+  left: 190px;
+}
+.course .course_container .details ul li:nth-child(5) {
+  top: 270px;
+  right: 190px;
+}
+.course .course_container .details ul li:nth-child(6) {
+  top: 430px;
+  left: 245px;
+}
+.course .course_container .details ul li:nth-child(7) {
+  top: 430px;
+  right: 245px;
+}
+.course .course_container .details ul li h4 {
+  font-size: 18px;
+  color: #333333;
+  font-weight: normal;
+}
+.course .course_container .details ul li .test {
+  text-align: center;
+}
+.course .course_container .details ul li .test .left {
+  float: left;
+  height: 30px;
+  padding-right: 10px;
+  border-right: 1px solid #333333;
+}
+.course .course_container .details ul li .test .left p {
+  padding: 0;
+  font-size: 12px;
+}
+.course .course_container .details ul li .test .right {
+  padding-left: 10px;
+  float: left;
+}
+.course .course_container .details ul li .test .right p {
+  padding: 0;
+  height: 30px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.profile {
+  background: #f3f3f3;
+  padding-bottom: 65px;
+}
+.profile .profile_container .details {
+  padding-top: 65px;
+}
+.profile .profile_container .details .imgs {
+  float: left;
+}
+.profile .profile_container .details p {
+  padding-top: 25px;
+  width: 620px;
+  float: right;
+  line-height: 50px;
+  text-align: left;
+  font-size: 14px;
+  color: #333333;
+  text-indent: 2em;
+}
+.project .project_container .details {
+  padding-top: 65px;
+}
+.information {
+  background: #f3f3f3;
+  padding-bottom: 40px;
+}
+.information .information_container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.information .information_container .details {
+  padding-top: 65px;
+}
+.information .information_container .details .imgs {
+  float: left;
+  margin-right: 15px;
+}
+.information .information_container .details .imgs img {
+  width: 480px;
+  height: 475px;
+}
+.information .information_container .details .list {
+  float: right;
+  width: 700px;
+}
+.information .information_container .details .list ul li {
+  height: 148px;
+  background: #e9e9e9;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.information .information_container .details .list ul li:last-child {
+  margin-bottom: 0;
+}
+.information .information_container .details .list ul li .p1 {
+  padding-bottom: 15px;
+  padding-left: 105px;
+  background: url('../images/xintianjie/newhead.png') no-repeat;
+  font-size: 18px;
+  color: #333333;
+}
+.information .information_container .details .list ul li .liner {
+  height: 1px;
+  background: #cf1b25;
+}
+.information .information_container .details .list ul li .p2 {
+  color: #999999;
+  font-size: 14px;
+  text-align: left;
+  padding-top: 12px;
+}
+.information .information_container .details .list ul li span {
+  display: block;
+  float: right;
+  font-size: 12px;
+  color: #999999;
+  line-height: 40px;
+}
+.presentation {
+  padding-bottom: 40px;
+}
+.presentation .presentation_container .lists {
+  margin-top: 25px;
+}
+.presentation .presentation_container .lists ul li {
+  float: left;
+  width: 185px;
+  height: 120px;
+  line-height: 120px;
+  border: 1px solid #e3e3e3;
+  box-sizing: border-box;
+  margin-right: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+.presentation .presentation_container .lists ul li img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer .footer_container {
+  text-align: center;
+}
+.footer .footer_container .tabs {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  color: #333333;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #999999;
+  padding: 0 25px;
+}
+.footer .footer_container .contacts {
+  margin: 20px 0;
+}
+.footer .footer_container .contacts p {
+  padding: 3px;
+}
+.footer .footer_container .contacts p span {
+  border: none;
+  color: #999999;
+}
+.footer2 {
+  height: 250px;
+  background: #525252;
+}
+.footer2 .contactsUs {
+  text-align: center;
+}
+.footer2 .contactsUs ul {
+  display: inline-block;
+  margin-top: 30px;
+}
+.footer2 .contactsUs ul li {
+  float: left;
+  border-right: 1px dotted #ffffff;
+  padding: 0 80px;
+}
+.footer2 .contactsUs ul li:last-child {
+  border-right: 0;
+}
+.footer2 .contactsUs ul li h4 {
+  color: #dadada;
+  font-size: 18px;
+  font-weight: normal;
+}
+.footer2 .contactsUs ul li .mobile {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.footer2 .contactsUs ul li span {
+  color: #ffffff;
+  font-size: 14px;
+}
+.footer2 .contactsUs ul li .guanzhu {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.footer2 .contactsUs ul li .guanzhu .wechat {
+  float: left;
+  margin-right: 30px;
+}
+.footer2 .contactsUs ul li .guanzhu .wechat img {
+  display: block;
+  margin-left: 10px;
+}
+.footer2 .contactsUs ul li .guanzhu .wechat span {
+  text-align: left;
+}
+.footer2 .contactsUs ul li .guanzhu .code {
+  float: left;
+}
+.footer2 .foot2_lists {
+  text-align: center;
+}
+.footer2 .foot2_lists a {
+  color: #dadada;
+  padding: 0 20px;
+  font-size: 12px;
+}
+.footer2 p {
+  text-align: center;
+  font-size: 12px;
+  color: #9c9c9c;
 }
